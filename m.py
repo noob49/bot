@@ -19,7 +19,7 @@ settings_collection = db['settings0']  # A new collection to store global settin
 redeem_codes_collection = db['redeem_codes0']
 
 # Bot Configuration
-TELEGRAM_BOT_TOKEN = '7740649057:AAEuh-143y8kUff1YiWPLdLDcy8oy0y_17s'
+TELEGRAM_BOT_TOKEN = '7740649057:AAEc1wLmRsIt0NW837enQ1Gm211tsjw4OOs'
 ADMIN_USER_ID = 6366780616  # Replace with your admin user ID
 
 async def help_command(update: Update, context: CallbackContext):
@@ -159,7 +159,7 @@ async def bgmi(update: Update, context: CallbackContext):
 async def run_bgmi(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./NOOB {ip} {port} {duration} {7} 800",
+            f"./NOOB {ip} {port} {duration} {1000}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
