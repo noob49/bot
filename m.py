@@ -159,7 +159,7 @@ async def bgmi(update: Update, context: CallbackContext):
 async def run_bgmi(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./daku {ip} {port} {duration} {7} 800",
+            f"./NOOB {ip} {port} {duration} {7} 800",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
